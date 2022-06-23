@@ -20,8 +20,9 @@
 		Connection conn=null;
 		try{
 			Class.forName(driverName);	//드라이버 로딩
-			conn = DriverManager.getConnection(url, username, password);
 			//데이터베이스 연동
+			conn = DriverManager.getConnection(url, username, password);
+			
 			
 			out.println(conn);
 		}catch(Exception e) {	//Exception: 모든 에러를 찾는 상위 클래스
